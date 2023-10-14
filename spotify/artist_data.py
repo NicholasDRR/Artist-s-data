@@ -2,7 +2,7 @@ import requests
 
 from app.utils import *
 from app.parameters import *
-from app.access_token import *
+from spotify.access_token import *
 
 
 artist_data = requests.get(url=url_format(ARTIST_URL, ARTIST_ID), headers=headers).json()

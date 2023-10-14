@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 
-from app.artist_data import formarted_artist_data
+from spotify.artist_data import formarted_artist_data
 
 router = APIRouter(
     prefix="/artist",
