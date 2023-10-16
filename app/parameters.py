@@ -17,4 +17,4 @@ ALBUMS_URL = 'https://api.spotify.com/v1/artists/id/albums?market=country&limit=
 
 RELATED_ARTISTS_URL = 'https://api.spotify.com/v1/artists/id/related-artists'
 
-KEYS_TO_EXCLUDE = 'id, images, uri, href, external_urls, external_ids, is_local, preview_url, limit, next, offset, previous, total, album_group, album_type'
+KEYS_TO_EXCLUDE = 'id, link, images, uri, href, external_urls, external_ids, is_local, preview_url, limit, next, offset, previous, total, album_group, album_type'

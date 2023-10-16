@@ -1,4 +1,3 @@
-import io
 from fastapi import APIRouter, HTTPException, status
 from fastapi.responses import JSONResponse, FileResponse
 from typing import Union
@@ -7,7 +6,10 @@ from app.spotify.artist_data import get_artist_data
 from app.parameters import KEYS_TO_EXCLUDE
 
 router = APIRouter(
-    prefix="/artist",
+    prefix="/spotify",
+    tags=[
+        "spotify"
+    ]
 )
 
 
