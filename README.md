@@ -12,4 +12,11 @@ API que formata e retorna dados do seu artista favorito em várias plataformas
 
 ![swagger](docs/swagger.PNG)
 
-### `/Spotify` - Consome a API do Spotify e retorna os dados tratados de acordo com os parâmetros informados
+### `/Spotify` 
+![Spotify](docs/spotify.PNG)
+
+### `/Deezer` 
+![Deezer](docs/deezer.PNG)
+
+### `/Download` 
+![Download](docs/download.PNG)
