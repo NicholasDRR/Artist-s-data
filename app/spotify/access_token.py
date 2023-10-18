@@ -1,7 +1,7 @@
 import requests
 import base64
 
-from parameters import CLIENT_ID, CLIENT_SECRET
+from app.parameters import CLIENT_ID, CLIENT_SECRET
 
 def get_access_token():
 
