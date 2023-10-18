@@ -13,7 +13,11 @@ router = APIRouter(
 
 
 @router.get('/')
-def deezer_artist_data(artist_name: str, keys_to_exclude: str = KEYS_TO_EXCLUDE):
+def deezer_artist_data(artist_name: str, keys_to_exclude: str = KEYS_TO_EXCLUDE): 
+    """
+    Consome a API do Deezer e busca as informações do ***artista*** informado no parâmetro *artist_name* \n
+    Retorna os dados tratados de acordo com o que for informado no parâmetro *keys_to_exclude* \n
+    """
 
     keys_to_exclude = keys_to_exclude.replace(' ', '').replace('id', '').replace('name', '').split(',')
     
