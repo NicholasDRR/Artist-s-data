@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, status
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import JSONResponse
 
 from app.deezer.artist_data import get_artist_data
 from app.parameters import KEYS_TO_EXCLUDE
@@ -12,14 +12,6 @@ router = APIRouter(
 )
 
 
-@router.get("/download")
-async def download_excel():
-    
-    file_path = f"app/archives/model.xlsx"
-    
-    return FileResponse(file_path, headers={"Content-Disposition": f"attachment; filename=file"})
-    
-    
 @router.get('/')
 def deezer_artist_data(artist_name: str, keys_to_exclude: str = KEYS_TO_EXCLUDE):
 

@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.routes.spotify import router as router_spotify
 from app.routes.deezer import router as router_deezer
+from app.routes.download import router as router_download
 
 app = FastAPI()
 
@@ -23,3 +24,4 @@ app.add_middleware(
 
 app.include_router(router_spotify)
 app.include_router(router_deezer)
+app.include_router(router_download)
