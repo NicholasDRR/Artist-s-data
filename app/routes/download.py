@@ -13,7 +13,6 @@ router = APIRouter(
 )
 
 
-
 @router.get("/download")
 async def download_excel(artist_name: str, artist_country: Union[str, None] = 'BR'):
     """
