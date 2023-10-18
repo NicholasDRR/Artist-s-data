@@ -7,6 +7,10 @@ CLIENT_ID = os.getenv('CLIENT_ID')
 
 CLIENT_SECRET=os.getenv('CLIENT_SECRET')
 
+AMAZON_CLIENT_ID = os.getenv('AMAZON_CLIENT_ID')
+
+AMAZON_CLIENT_SECRET=os.getenv('AMAZON_CLIENT_SECRET')
+
 FIND_ARTIST_URL = 'https://api.spotify.com/v1/search?q=artist_name&type=artist&market=country&limit=1'
 
 ARTIST_URL = 'https://api.spotify.com/v1/artists/id'

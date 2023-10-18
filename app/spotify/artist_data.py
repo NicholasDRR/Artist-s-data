@@ -1,8 +1,8 @@
 import requests
 
-from app.utils import *
-from app.parameters import *
-from app.spotify.access_token import *
+from utils import *
+from parameters import *
+from spotify.access_token import *
 
 
 def get_artist_data(artist_name: str, keys_to_exclude: set, artist_country: str) -> dict:
